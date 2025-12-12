@@ -1,0 +1,27 @@
+[theme]
+# Forces the app into Dark Mode by default
+base = "dark"
+
+# Matches your purple/indigo gradient primary color
+primaryColor = "#667eea" 
+
+# Sets the background color (fallback behind your background image)
+backgroundColor = "#0f0c29"
+
+# Matches the 'secondary' dark background color (sidebar/inputs)
+secondaryBackgroundColor = "#24243e"
+
+# Standard font family
+font = "sans serif"
+
+[server]
+# Enforces the 5MB limit on the server side (Default is 200MB)
+maxUploadSize = 5
+
+# clean up file watcher to save resources
+fileWatcherType = "none"
+
+[client]
+# Hides the "Deploy" button and hamburger menu for a cleaner "App" feel
+toolbarMode = "viewer"
+showSidebarNavigation = false
