@@ -113,7 +113,7 @@ async def rag_query_pdf_ai(ctx: inngest.Context):
         )
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash", 
+            model="gemma-3-27b", 
             contents=user_prompt,
             config=types.GenerateContentConfig(
                 system_instruction=system_instruction,
