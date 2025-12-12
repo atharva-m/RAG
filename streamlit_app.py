@@ -6,7 +6,7 @@ import base64
 import requests
 import streamlit as st
 import inngest
-import uuid  # Added for Session Isolation
+import uuid 
 from dotenv import load_dotenv
 
 # --- Configuration ---
@@ -30,7 +30,7 @@ def get_base64_of_bin_file(bin_file):
 # --- Custom CSS Injection ---
 def add_custom_css():
     # Attempt to load local image, fallback to gradient
-    bin_str = get_base64_of_bin_file("D://Python_Projects//RAG//assets//background_image.jpeg")
+    bin_str = get_base64_of_bin_file("/home/RAG/assets/background_image.jpeg")
     
     if bin_str:
         bg_image_css = f"""
