@@ -30,7 +30,7 @@ def get_base64_of_bin_file(bin_file):
 # --- Custom CSS Injection ---
 def add_custom_css():
     # Attempt to load local image, fallback to gradient
-    bin_str = get_base64_of_bin_file("/home/RAG/assets/background_image.jpeg")
+    bin_str = get_base64_of_bin_file("/home/ubuntu/RAG/assets/background_image.jpeg")
     
     if bin_str:
         bg_image_css = f"""
